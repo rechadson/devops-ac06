@@ -32,6 +32,7 @@ def contact(request):
             'title':'Contato',
             'message':'Entre em contato conosco',
             'year':datetime.now().year,
+            'nome':['Rechadson','Jeferson','Rayssa Maria','Fabiana Gomes']
         })
     )
 
@@ -46,6 +47,7 @@ def about(request):
             'title':'About',
             'message':'Gerenciador de vestibulares',
             'year':datetime.now().year,
+            'nome':['Rechadson','Jeferson','Rayssa Maria','Fabiana Gomes']
         })
     )
 
