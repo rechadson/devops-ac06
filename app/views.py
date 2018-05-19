@@ -99,7 +99,7 @@ def incluirCandidato(request):
     if request.POST:
         Candidato.objects.create(
             nome=request.POST.get("nome"),
-            idCurso=request.POST.get("idCurso")                                    
+            IdCruso=request.POST.get("idCurso")                                    
         return render(
             request,
             'app/inscricao_de_candidatos.html',
