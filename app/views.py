@@ -101,6 +101,6 @@ def incluirCandidato(request):
             nome=request.POST.get("nome"),
             idCurso=request.POST.get("idCurso")
                                     
-        return render(request, 'app/inscricao_de_candidatos.html', context)
+        return render(request, "app/inscricao_de_candidatos.html", context)
     else:
         return render(request, "app/inscricao_de_candidatos.html", context)
