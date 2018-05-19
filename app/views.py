@@ -83,7 +83,7 @@ def inscricao_de_candidato(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/inscricao_de_candidato.html',
+        'app/inscricao_de_candidatos.html',
         context_instance = RequestContext(request,
         {
             'title':'inscricao de candidatos',
