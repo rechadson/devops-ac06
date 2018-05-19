@@ -92,3 +92,15 @@ def inscricao_de_candidatos(request):
             'year':datetime.now().year,
         })
     )
+
+
+def incluirCandidato(request):
+    context = {}
+    if request.POST:
+        Candidato.objects.create(
+            nome=request.POST.get("nome"),
+            idCurso=request.POST.get("idCurso")
+                                    
+        return render(request, 'app/inscricao_de_candidatos.html', context)
+    else:
+        return render(request, "app/inscricao_de_candidatos.html", context)
