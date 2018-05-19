@@ -102,14 +102,14 @@ def incluirCandidato(request):
             idCurso=request.POST.get("idCurso")
                                     
         return render(
-        request,
-        'app/inscricao_de_candidatos.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'inscricao de candidatos',
+            request,
+            'app/inscricao_de_candidatos.html',
+            context_instance = RequestContext(request,
+            {
+                'title':'inscricao de candidatos',
 #            
-            'candidatos': Candidatos.objects.all(),
-            'year':datetime.now().year,
-        })
-    )
+                'candidatos': Candidatos.objects.all(),
+                'year':datetime.now().year,
+             })
+            )
  
