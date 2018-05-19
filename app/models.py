@@ -14,4 +14,4 @@ class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
 class Candidatos(models.Model):
     nome = models.CharField(max_length=200)
-    idCurso = models.IntegerField(max_length=30)
+    IdCruso = models.IntegerField(max_length=30)
